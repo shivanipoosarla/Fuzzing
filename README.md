@@ -1,11 +1,22 @@
-# Fuzzing Assignment
+# Fuzzing Experiments
 
-This repository contains my solutions for fuzzing exercises.
+This project implements:
+- Random fuzzing
+- Mutation-based fuzzing
+- Custom AFL-style mutations
+- Coverage tracking experiments
 
-## Contents
-- `notebooks/` - Jupyter notebook solution
-- `src/` - (optional) reusable Python modules
-- `scripts/` - (optional) runnable scripts
+## Installation
 
-## How to run
-Open the notebook in Jupyter and run cells in order.
+pip install -r requirements.txt
+
+## Usage
+
+Open the notebook in Jupyter:
+jupyter notebook notebooks/Fuzzing_Exercises_Solution.ipynb
+
+## Structure
+
+notebooks/ - Jupyter solution  
+src/ - Reusable fuzzing components  
+scripts/ - Optional CLI execution  
