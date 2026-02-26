@@ -66,7 +66,9 @@ Unique bc() lines covered: 3
 Covered lines: [...]
 Seed: 0
 ```
+### Example Output
 
+![CLI Output](docs/cli_run_example.png)
 
 ## Run Tests
 
