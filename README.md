@@ -1,3 +1,5 @@
+[![tests](https://github.com/shivanipoosarla/Fuzzing/actions/workflows/tests.yml/badge.svg)](https://github.com/shivanipoosarla/Fuzzing/actions/workflows/tests.yml)
+
 # FuzzLab: Coverage-Guided Fuzzing Experiments
 
 A small experimental fuzzing framework implementing:
