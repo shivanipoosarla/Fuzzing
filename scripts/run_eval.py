@@ -9,6 +9,7 @@ Run:
 
 import argparse
 import random
+from unittest import result
 
 from fuzzlab.fuzzers import CustomMutationFuzzer
 from fuzzlab.evaluation import run_mutation_experiment
@@ -27,11 +28,14 @@ def main() -> None:
 
     result = run_mutation_experiment(fuzzer, iterations=args.iterations)
 
-    print("=== Fuzzing Evaluation Summary ===")
-    print(f"Iterations: {result['total_iterations']}")
-    print(f"Unique bc() lines covered: {result['unique_coverage_count']}")
-    print(f"Covered lines: {result['covered_lines']}")
-    print(f"Seed: {args.seed}")
+   
+
+    print("\n=== Fuzzing Evaluation Summary ===")
+    print(f"Iterations              : {result['total_iterations']}")
+    print(f"Unique bc() lines       : {result['unique_coverage_count']}")
+    print(f"Covered lines           : {result['covered_lines']}")
+    print(f"Random seed             : {args.seed}")
+    print("==================================\n")
 
 
 if __name__ == "__main__":
