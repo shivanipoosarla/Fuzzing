@@ -1,0 +1,20 @@
+[project]
+name = "fuzzlab"
+version = "0.1.0"
+description = "A small fuzzing lab: random and mutation fuzzers, AFL-style mutations, and coverage evaluation"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "fuzzingbook",
+  "matplotlib",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
