@@ -50,8 +50,6 @@ pip install pytest matplotlib markdown pyparsing==2.4.7
 pip install --no-deps fuzzingbook
 ```
 
----
-
 ## Run CLI Evaluation
 
 ```powershell
@@ -77,28 +75,42 @@ $env:PYTHONPATH="src"
 pytest -q
 ```
 
-CI runs automatically on every push (GitHub Actions).
+CI runs automatically on every push.
 
 
 ## Project Structure
 
 ```
-src/fuzzlab/
-    targets.py        # Target functions under test
-    fuzzers.py        # Random + mutation fuzzers
-    evaluation.py     # Coverage experiment logic
-
-scripts/
-    run_eval.py       # CLI runner
-
-tests/
-    test_targets.py
-    test_mutations.py
-
-notebooks/
-    Fuzzing_Exercises_Solution.ipynb
+Fuzzing/
+├── .github/
+│ └── workflows/
+│ └── tests.yml # GitHub Actions CI workflow
+│
+├── docs/
+│ └── cli_run_example.png # Example CLI output screenshot
+│
+├── notebooks/
+│ └── Fuzzing_Exercises_Solution.ipynb
+│
+├── scripts/
+│ └── run_eval.py # CLI runner for fuzzing experiments
+│
+├── src/
+│ └── fuzzlab/
+│ ├── init.py
+│ ├── targets.py # Target functions under test
+│ ├── fuzzers.py # Random + mutation fuzzers
+│ └── evaluation.py # Coverage experiment logic
+│
+├── tests/
+│ ├── test_targets.py
+│ └── test_mutations.py
+│
+├── pyproject.toml
+├── requirements.txt
+├── README.md
+└── .gitignore
 ```
-
 
 ## Implemented Mutation Strategies
 
@@ -116,12 +128,3 @@ These operators demonstrate how small input perturbations can increase path expl
 * Additional mutation operators
 * Structured input fuzzing
 * Comparison against grammar-based fuzzing
-
-
-Now commit it:
-
-```powershell
-git add README.md
-git commit -m "Rewrite README with project overview and quickstart"
-git push
-```
