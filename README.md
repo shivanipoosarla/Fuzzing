@@ -92,7 +92,7 @@ Fuzzing/
 │ └── cli_run_example.png # Example CLI output screenshot
 │
 ├── notebooks/
-│ └── Fuzzing_Exercises_Solution.ipynb
+│ └── fuzzing_experiments.ipynb
 │
 ├── scripts/
 │ └── run_eval.py # CLI runner for fuzzing experiments
