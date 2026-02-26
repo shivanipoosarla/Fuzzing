@@ -130,3 +130,7 @@ These operators demonstrate how small input perturbations can increase path expl
 * Additional mutation operators
 * Structured input fuzzing
 * Comparison against grammar-based fuzzing
+
+## License
+
+This project is for educational and experimental purposes.
